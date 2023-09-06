@@ -1,0 +1,76 @@
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-badge {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 55px;
+}
+
+.custom-spin {
+    : spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#pageSidebarTop li > a {
+    background-color: #FFF;
+    border: 1px solid #FDF2E8;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #ddd;
+}
+
+.pagination .page-link.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.uk-margin nav svg {
+    max-width: 3%;
+}
+
+.uk-margin .pagination li span:not(.sr-only) {
+    display: none;
+}
+
+.uk-margin .pagination li a {
+    padding: 0.25rem 0.5rem;
+}
